@@ -79,7 +79,7 @@ ecommerce-backend/
 
 
 🧩 **Dependencies needed to run the project**
-You can all of the below dependencies from Maven Repository (https://mvnrepository.com/)
+<br/> You can all of the below dependencies from Maven Repository (https://mvnrepository.com/)
 
 🌐 Common to all Services :-
 - Spring Boot Starter Web
