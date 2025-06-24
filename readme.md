@@ -77,3 +77,49 @@ ecommerce-backend/
 | Order Service     | `/orders/user`                  | GET    | Public         |
 | Inventory Service | `/inventory/all`                | GET    | Admin only     |
 
+
+🧩 **Dependencies needed to run the project**
+You can all of the below dependencies from Maven Repository (https://mvnrepository.com/)
+
+🌐 Common to all Services :-
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+- Spring Boot Starter Validation
+- Spring Boot DevTools
+- Spring Boot Actuator
+- Lombok
+- PostgreSQL Connector
+
+👤 User Service
+- Spring Boot Starter Security (for password encoding)
+- JSON Web Token (jjwt)
+- Spring Cloud Starter Netflix Eureka Client
+
+🛍️ Product Service
+- Spring Cloud Starter Netflix Eureka Client
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+
+📦 Inventory Service
+- Spring Cloud Starter Netflix Eureka Client
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+
+📬 Order Service
+- Spring Cloud Starter Netflix Eureka Client
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+- Spring Boot Starter Mail (Jakarta Mail for SMTP)
+- Spring Boot Starter Validation
+- Spring Boot Starter JSON
+- Spring Boot Starter WebFlux (for WebClient)
+
+🚪 API Gateway
+- Spring Cloud Starter Gateway
+- Spring Cloud Starter Netflix Eureka Client
+- Spring Boot Starter WebFlux
+- JSON Web Token (jjwt)
+- Spring Boot Starter Security (optional for advanced filtering)
+
+🧭 Eureka Server
+- Spring Cloud Starter Netflix Eureka Server
