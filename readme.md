@@ -1,9 +1,7 @@
-🛒 E-Commerce Microservices Backend
-
 This is a production-grade e-commerce backend system built using Spring Boot microservices architecture, designed for scalability, modularity, and clarity. It covers essential backend features such as user authentication, product management, inventory tracking, order processing, and inter-service communication.
 
 
-🚀 Features
+🚀 **Features**
 
 - ✅ Spring Boot Microservices Architecture
 - 🔑 JWT Authentication via API Gateway
@@ -18,18 +16,18 @@ This is a production-grade e-commerce backend system built using Spring Boot mic
 - 📄 Well-structured service-wise REST APIs
 
 
-🧱 Microservices Structure
+🧱 **Microservices Structure**
 
 ecommerce-backend/ 
-- api-gateway/ # Entry point with JWT filter and routing
-- eureka-server/ # Eureka server for service registration
-- product-service/ # Handles product listings and visibility
-- user-service/ # User registration, login, and token generation
-- order-service/ # Places orders, sends confirmation emails
-- inventory-service/ # Manages product quantity and availability
+   - api-gateway/ # Entry point with JWT filter and routing
+   - eureka-server/ # Eureka server for service registration
+   - product-service/ # Handles product listings and visibility
+   - user-service/ # User registration, login, and token generation
+   - order-service/ # Places orders, sends confirmation emails
+   - inventory-service/ # Manages product quantity and availability
 
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
 - Java 17
 - Spring Boot 3.2+
@@ -41,7 +39,7 @@ ecommerce-backend/
 - JWT (jjwt)
 - Maven
 
-🔐 Authentication Flow
+🔐 **Authentication Flow**
 
 1. Login via `/users/login` generates a JWT.
 2. The Gateway intercepts requests and validates the token.
@@ -52,13 +50,13 @@ ecommerce-backend/
 
 
 
-📬 Email Integration
+📬 **Email Integration**
 
 - Order confirmations are emailed to users using Jakarta Mail over Gmail SMTP.
 - Triggered automatically on successful order placement.
 
 
-🧪 Testing Instructions
+🧪 **Testing Instructions**
 
 - Import into IntelliJ or your preferred IDE.
 - Run the Eureka server (`discovery-server`) first.
@@ -68,7 +66,7 @@ ecommerce-backend/
   - Add `Authorization: Bearer <your_token>` in headers.
   - Access protected endpoints across services.
 
-📦 Sample Endpoints
+📦 **Sample Endpoints**
 
 | Service           | Endpoint                        | Method | Role Required  |
 |-------------------|---------------------------------|--------|----------------|
@@ -76,6 +74,6 @@ ecommerce-backend/
 | User Service      | `/users/login`                  | POST   | Public         |
 | Product Service   | `/products/add`                 | POST   | Admin only     |
 | Product Service   | `/products/all`                 | GET    | Public         |
-| Order Service     | `/orders/user`                  | GET    | User           |
+| Order Service     | `/orders/user`                  | GET    | Public         |
 | Inventory Service | `/inventory/all`                | GET    | Admin only     |
 
