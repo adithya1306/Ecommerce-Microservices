@@ -1,0 +1,45 @@
+# Ignore build files
+/target/
+**/target/
+
+# Ignore IntelliJ IDEA project files
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific config
+src/main/resources/application.properties
+**/src/main/resources/application.properties
+
+# Ignore OS-specific files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Ignore compiled class files
+*.class
+
+# Ignore Maven wrapper
+.mvn/
+!**/mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# Ignore backup files
+*~
+*.swp
+*.bak
+
+# Ignore test reports
+/test-output/
+
+# Ignore node_modules if frontend is integrated
+node_modules/
