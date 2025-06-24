@@ -21,6 +21,7 @@ This is a production-grade e-commerce backend system built using Spring Boot mic
 🧱 Microservices Structure
 
 ecommerce-backend/
+
 ├── api-gateway/ # Entry point with JWT filter and routing
 ├── discovery-server/ # Eureka server for service registration
 ├── product-service/ # Handles product listings and visibility
