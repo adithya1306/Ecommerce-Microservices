@@ -78,6 +78,7 @@ ecommerce-backend/
 | Inventory Service | `/inventory/all`                | GET    | Admin only     |
 
 
+
 🧩 **Dependencies needed to run the project**
 <br/> You can all of the below dependencies from Maven Repository (https://mvnrepository.com/)
 
@@ -112,7 +113,7 @@ ecommerce-backend/
 - Spring Boot Starter Mail (Jakarta Mail for SMTP)
 - Spring Boot Starter Validation
 - Spring Boot Starter JSON
-- Spring Boot Starter WebFlux (for WebClient)
+- Spring Boot Starter WebFlux (for Inter-Service Communication)
 
 🚪 API Gateway
 - Spring Cloud Starter Gateway
